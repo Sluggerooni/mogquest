@@ -1,0 +1,599 @@
+.cool {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border: 0px solid rgb(255, 255, 255);
+    height: 90vh;
+    opacity: 0;
+    animation: fadeIn 05s ease forwards;
+}
+
+body {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+#return-to-main.nav-button{
+    position: fixed;
+    bottom: 20px;
+    left: 150px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid white;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+#return-to-main.nav-button:hover {
+    background-color: rgb(174, 174, 174);
+    border: 1px solid white;
+}
+
+h1 {
+    color: blue;
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+}
+
+h2,
+
+* {
+    color: white;
+}
+
+h2 {
+    color: red;
+}
+
+
+#story-image {
+    width: auto;
+    height: 97%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 0px solid rgb(255, 0, 0);
+    height: 600px;
+}
+
+#image-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    border: 1px solid rgb(255, 255, 255);
+    height: 660px;
+}
+
+p:nth-last-of-type(1) {
+    font-weight: bold;
+}
+
+
+.unda {
+    font-size: 0.60em;
+}
+
+.coolar {
+    color: black;
+    background-color: none;
+    border-color: none;
+    text-decoration: none;
+    padding: 15px 35px;
+}
+
+
+.butt-styling {
+    font-size: 1.5em;
+    border-radius: 10px;
+    border: black 2px solid;
+    background-color: rgb(177, 255, 9);
+    padding: 15px;
+}
+
+button {
+    margin: 10px;
+    border: 1px solid white;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+
+button:hover {
+    background-color: rgb(174, 174, 174);
+    border: 1px solid white;
+}
+
+#story {
+    font-size: 1.5em;
+    border: 2px solid rgb(255, 255, 255);
+    margin-bottom: 10px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    max-height: 100px;
+    height: 100%;
+
+}
+
+#story p {
+    margin-left: 20px;
+    color: white;
+    border-color: white;
+}
+
+.title {
+    font-size: 6em;
+    font-weight: bold;
+    color: blue;
+    transform: translate(0%, -80%);
+}
+
+#qte-box {
+    display: none;
+    /* Initially hidden */
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 90%;
+}
+
+/* Button Styling */
+#start-button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+#start-button:hover {
+    background-color: #218838;
+}
+
+/* Letter Display Styling */
+#qte-box h2 {
+    font-size: 36px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Status Display Styling */
+#qte-box p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Score Display Styling */
+#qte-box #score-display {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Timer Display Styling */
+#qte-box #timer-display {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Fail and Win Message Styling */
+#qte-box #fail-message,
+#qte-box #win-message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: none;
+}
+
+/* Fail Message (Red) */
+#qte-box #fail-message {
+    color: red;
+}
+
+/* Win Message (Green) */
+#qte-box #win-message {
+    color: green;
+}
+
+/* Image for Win Message */
+#qte-box #win-image {
+    display: none;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+/* Hide game elements until the game starts */
+#qte-box {
+    display: none;
+    /* Keep hidden initially */
+}
+
+#inventory,
+#shop {
+    display: none;
+}
+
+.inv {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin: 0 auto;
+    padding: 10px;
+    transform: translate(0%, 300%);
+    color: white;
+    position: absolute;
+}
+
+#inventory-list {
+    display: flex;
+    gap: 15px;
+    /* optional spacing between items */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+ul {
+    display: inline;
+}
+
+#inventory {
+    display: none;
+    /* Hide initially */
+}
+
+#shop-items li,
+#inventory-list li {
+    margin: 5px;
+    list-style-type: none;
+}
+
+#shop.inv {
+    position: absolute;
+    transform: translate(0%, 0%);
+}
+
+#scoreboard {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+    width: 40%;
+    margin: auto;
+    width: 25%;
+    padding: 10px;
+    transform: translate(170%, 0%);
+}
+
+#start-qte {
+    transform: translate(0%, 0%);
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid white;
+}
+
+#back-to-intro {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid white;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+#back-to-intro:hover {
+    background-color: rgb(174, 174, 174);
+    border: 1px solid white;
+}
+
+#buttons button:last-of-type {
+    display: none;
+}
+
+
+@media only screen and (max-width: 414px) {
+    .cool {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #story-image {
+        width: 100%;
+    }
+
+    #image-container {
+        width: 100%;
+    }
+
+    #qte-box {
+        width: 90%;
+    }
+
+    #scoreboard {
+        width: 200px;
+        font-size: 16px;
+        transform: translate(40%, -2050%);
+    }
+
+    #back-to-intro {
+        transform: translate(-20%, -2225%);
+    }
+
+    #story p {
+        font-size: .8em
+    }
+
+    #story {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .cool {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #story-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    #image-container {
+        width: 100%;
+        height: 400px;
+
+    }
+
+    #qte-box {
+        width: 90%;
+    }
+
+    #scoreboard {
+        width: 200px;
+        font-size: 16px;
+        transform: translate(40%, -1500%);
+    }
+
+    #back-to-intro {
+        transform: translate(-20%, -1605%);
+    }
+
+    #story p {
+        font-size: .8em;
+    }
+
+    #story {
+        width: 100%;
+        transform: translate(0%, 0%);
+    }
+
+    #buttons {
+        transform: translate(0%, 0%);
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .cool {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #story-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    #image-container {
+        width: 100%;
+        height: 550px;
+
+    }
+
+    #qte-box {
+        width: 90%;
+    }
+
+    #scoreboard {
+        width: 200px;
+        font-size: 16px;
+        transform: translate(40%, -1930%);
+    }
+
+    #back-to-intro {
+        transform: translate(-20%, -2085%);
+    }
+
+    #story p {
+        font-size: .8em;
+    }
+
+    #story {
+        width: 100%;
+        transform: translate(0%, 0%);
+    }
+
+    #buttons {
+        transform: translate(0%, 0%);
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .cool {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #story-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    #image-container {
+        width: 100%;
+        height: 650px;
+
+    }
+
+    #qte-box {
+        width: 90%;
+    }
+
+    #scoreboard {
+        width: 200px;
+        font-size: 16px;
+        transform: translate(40%, -2140%);
+    }
+
+    #back-to-intro {
+        transform: translate(-20%, -2325%);
+    }
+
+    #story p {
+        font-size: .8em;
+    }
+
+    #story {
+        width: 100%;
+        transform: translate(0%, 0%);
+    }
+
+    #buttons {
+        transform: translate(0%, 0%);
+    }
+}
+
+@media only screen and (width: 393px) {
+
+    .cool {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #story-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    #image-container {
+        width: 100%;
+        height: 6000px;
+    }
+
+    #qte-box {
+        width: 90%;
+    }
+
+    #scoreboard {
+        width: 200px;
+        font-size: 16px;
+        transform: translate(40%, -1950%);
+    }
+
+    #back-to-intro {
+        transform: translate(-20%, -2110%);
+    }
+
+    #story p {
+        font-size: .8em;
+    }
+
+    #story {
+        width: 100%;
+        transform: translate(0%, 0%);
+    }
+
+    #buttons {
+        transform: translate(0%, 0%);
+    }
+}

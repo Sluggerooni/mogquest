@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Mogquest</title>
+</head>
+
+<body>
+
+    <div hidden id="intro">
+        <h1>Mogquest</h1>
+        <p>Jimmy moggingson is a horrifically buff 7 '6 nonchalant unemployed lightskin who spends his days playing
+            dress to impress while living with this bombshell hot breadwinning wife. He wakes up to his beautiful wife.
+            She is getting fed up with you playing roblox all day and tells you to get a job.</p>
+    </div>
+
+    <h2 hidden>FINE!!!</h2>
+
+
+
+    <div id="image-container">
+        <img id="story-image" src="" alt="Story Image">
+    </div>
+
+    <div id="story"></div>
+    <div id="buttons"></div>
+    <button id="back-to-intro" class="nav-button">Back to Intro</button>
+    <button id="return-to-main" class="nav-button">Main Menu</button>
+    <button id="start-qte" hidden >Start QTE</button>
+
+    <div id="shop" style="display: none;" class="inv">
+        <h2>Shop</h2>
+        <ul id="shop-items"></ul>
+    </div>
+
+    <div id="inventory" class="inv">
+        <h2>Inventory</h2>
+        <ul id="inventory-list">
+        </ul>
+    </div>
+
+    <div id="scoreboard" style="
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    z-index: 1000;">
+    Rizz: <span id="rizz-score">0</span> | Aura: <span id="aura-score">0</span>
+</div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
